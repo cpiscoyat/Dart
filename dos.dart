@@ -30,5 +30,39 @@ void main() {
   print("a es igual a b: ${a == b}");
   print("a es diferente a b: ${a != b}");
 
-
+// Parte 2
+  int cantidad =5;
+  double precio=4.5;
+  String nombre="Juan";
+  
+  
+  print("***Operadores de Test de tipos de Datos***");
+   if(cantidad is int){
+     print("Correcto");
+   }
+  
+  if(precio is! String){
+    print("No es una cadena"); 
+  }else{
+    print("Es una cadena");
+  }
+   
+  if(nombre is int){
+    print("El numero es par: ${cantidad.isEven}"); 
+  }else{
+    print("No es numero");
+  }
+  
+  //print("El numero es par: ${(nombre as int).isEven}");
+  
+  print("***Operadores Lógicos***");
+  if(cantidad>3 && precio<8.5){
+    print("Tienes un descuento");
+  }
 }
+  
+  if(nombre=="Juan" || cantidad>10){
+    print("Cliente Ganador");
+  }
+  
+  print("${!(true && false)}");
