@@ -66,3 +66,29 @@ void main() {
   }
   
   print("${!(true && false)}");
+
+  
+  //Operadores Condicionales
+  5 > 2 ? print("N1 es mayor que N2") : print("N2 es mayor que N1");
+  var xx = "María";
+  String nombre = xx ?? "Juan";
+  print("El nombre es $nombre");
+
+  //Operadores en cascada
+  List<int> lista = [];
+  lista..add(1)..add(2);
+
+  //Otros Operadores () [] . ?.
+  lista.add(4);
+  lista.add(5);
+  print(lista[2]);
+  var variablenula = 548878;
+  print(variablenula?.toString());
+
+  //Las constantes
+  final igv = 0.18;
+  const igv2 = 0.18;
+  const valor = 7 * igv2;
+  print(igv);
+  print(igv2);
+  print(valor);
