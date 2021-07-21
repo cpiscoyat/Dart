@@ -1,0 +1,43 @@
+void main(){
+  //int num=2;
+  var b=Bicicleta(5,"Honda",35.2);
+  /*List<String> lista=[];
+  Map<int,String> mapa =Map();*/
+  print("La bicicleta tiene id=${b.id} y es marca ${b.marca} y avanza a una velocidad de ${b.velocidad} km/h");
+}
+
+class Bicicleta{
+  //propiedades o atributos
+  var _id;
+  var _marca;
+  var _velocidad;
+  
+  //constructor
+  Bicicleta(int i,String m, double v){
+    this._id=i;
+    this._marca=m;
+    this._velocidad=v;
+  }
+  
+  
+  //getter (tipo de dato que retorna) y setter (void).
+  /*void set id(int i){
+    this._id=i;
+  }*/
+  void set id(int i)=>this._id=i;
+  /*int get id{
+    return this._id;
+  }*/
+  int get id => this._id;
+  
+  void set marca(String m)=>this._marca=m;
+  String get marca => this._marca;
+  void set velocidad(double v)=>this._velocidad=v;
+  double get velocidad => this._velocidad;
+  
+  
+  
+  
+  
+  
+}
